@@ -9,7 +9,7 @@ class Firewall(object):
         self.firewall = defaultdict(lambda: defaultdict(dict))
 
         # read data from csv file and store them into firewall
-        with open(path, "rb") as csv_file:
+        with open(path, "r") as csv_file:
             content = csv.reader(csv_file)
             for row in content:
                 direction, protocol, port, ip_address = row[0], row[1], row[2], row[3]
