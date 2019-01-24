@@ -9,7 +9,7 @@ I created a nested dictionary/json to store the rules read from csv file as foll
 The idea is that I first check if the port in the range of or equals to values in firewall["direction"]["protocol"]; If yes, then I further check whether ip_address equals to one entry in firewall["direction"]["protocol"]["port"]. It is convenient to look up whether an entry satisfies the rules stored in firewall. The time complexity is O(1).
 
 ## Test
- I created a csv file based on given rules. The code is tested using the sample entries and functions as expected.
+ I created a csv file based on given rules. The code is tested using the sample entries. It works as expected.
 
 ## Team Preference
 1. Data  
